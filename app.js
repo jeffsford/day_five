@@ -92,7 +92,7 @@ function multiplyArray(testArray){
   var lastMult = multiply(firstMult[0], testArray[2]);
   return [lastMult[0], 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + lastMult[0] + '.'];
 }
-multiplyArray(2, 3, 4);
+multiplyArray(testArray);
 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(2,3,4);
