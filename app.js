@@ -70,7 +70,6 @@ var testArray = [2,3,4];
 function sumArray(testArray){
   var firstSum = sum(testArray[0], testArray[1]);
   var lastSum = sum(firstSum[0], testArray[2]);
-  console.log(lastSum);
   return [lastSum[0], testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + lastSum[0] + ' is their sum.'];
 }
 sumArray(testArray);
@@ -88,11 +87,14 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(testArray){ //eslint-disable-line
-
+function multiplyArray(testArray){
+  var firstMult = multiply(testArray[0], testArray[1]);
+  var lastMult = multiply(firstMult[0], testArray[2]);
+  return [lastMult[0], 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + lastMult[0] + '.'];
 }
+multiplyArray(2, 3, 4);
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(2,3,4);
+testMultiplyArray(2,3,4);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
